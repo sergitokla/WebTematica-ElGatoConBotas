@@ -7,19 +7,19 @@ body {
     color: rgb(156, 136, 136);
 }
 
-  .nav-link {
+.nav-link {
     margin: 0 10px;
     font-weight: 500;
     text-decoration: none;
-  }
+}
   
-  .nav-link:hover {
+.nav-link:hover {
     text-decoration: underline;
-  }
+}
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #e50914;
 }
 
 .peliculas-container {
