@@ -1,0 +1,38 @@
+.cronologia .poster {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.timeline {
+  gap: 40px;
+}
+
+.linea-tiempo {
+  height: 50px;
+  position: relative;
+}
+
+.linea-tiempo .linea {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: gray;
+  z-index: 0;
+}
+
+.linea-tiempo .punto {
+  position: absolute;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  border: 2px solid white;
+}
