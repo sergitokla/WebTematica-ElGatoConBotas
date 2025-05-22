@@ -1,58 +1,55 @@
+/*Para el cuerpo de la pagina un fondo oscuro, un color de tono gris de texto principal y una fuente para el texto*/
 body {
     background-color: #121212;
     color: rgb(156, 136, 136);
     font-family: 'Segoe UI', sans-serif;
 }
+
+  /*Para los enlaces de navegacion, un espaciado horizontal entre elaces, le quitamos el subbrayado por defecto y le ponemos grosor al texto*/
 .nav-link {
     margin: 0 10px;
     font-weight: 500;
     text-decoration: none;
 }
   
+  /*Se subraya el texto al pasar el cursor sobre un enlace de la navegacion de la página*/
 .nav-link:hover {
     text-decoration: underline;
 }
 
+/*Para el titulo principal lo hemos alineado al centro */
 h1 {
-    margin: 0;
-    text-align: center;
-}
-p{
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+/*Alineamos el texto de debajo del titulo al centro*/
+p{
+    text-align: center;
 }
-        
+   
+/*Para las cajitas le hemos puesto un color de fondo, los bordes redondeados, un espacio inferior entre las tarjetas y un relleno interno*/
 .movie {
     background: #503030;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     padding: 20px;
 }
 
+/*Para el titulo de la pelicula en las tarjetas le hemos puesto un color plateado*/
 .movie h2 {
-    margin-top: 0;
     color: silver;
 }
 
+/*Para el contenedor de los trailer(videos) henmos puesto una posicion relativa para que esten dentro de las cajas, una altura proporcional para mantener las proporciones del video */
 .trailer-container {
     position: relative;
     padding-bottom: 600px;
-    height: 0;
-    overflow: hidden;
-    margin: 20px 0;
 }
 
+/*Para el iframe del trailer le hemos puesto un posicionamiento aboluto dentro del contenedor relativo, le hemos puesto que ocupe todo el ancho disponible,
+ que ocupa toda la altura determinada por el contenedor*/
 .trailer-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    border: none;
 }
