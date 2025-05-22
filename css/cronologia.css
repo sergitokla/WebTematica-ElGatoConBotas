@@ -3,7 +3,7 @@
   height: 180px;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(209, 128, 22, 0.5);
 }
 
 .timeline {
@@ -30,9 +30,26 @@
   top: 15px;
   width: 20px;
   height: 20px;
-  background-color: yellow;
+  background-color: rgb(182, 144, 21);
   border-radius: 50%;
   z-index: 1;
   transform: translateX(-50%);
   border: 2px solid white;
 }
+/* Colores personalizados para el scrollspy */
+  #list-example .list-group-item {
+    background-color: #504444;
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  #list-example .list-group-item:hover {
+    background-color: #e4a11b;
+    color: #000000;
+  }
+
+  .scrollspy-example {
+    background-color: #110f0f;
+    color: #9e888b;
+  }
