@@ -4,12 +4,14 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
+    text-align: center;
 }
 
-header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
+
+.tiulo{
+    text-align: center;
+}
+.txt{
     text-align: center;
 }
 
@@ -43,7 +45,8 @@ h1 {
 
 .movie h2 {
     margin-top: 0;
-    color: #e50914;
+    color:  rgb(182, 144, 21);
+    text-align: center;
 }
 
 .trailer-container {

@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El Gato con Botas</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - El Gato con Botas</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/Css/bootstrap.css">
-  <link rel="stylesheet" href="/Css/styles.css">
-  <link rel="stylesheet" href="/js/bootstrap.bundle.js">
-  <link rel="stylesheet" href="/js/catálogo.js">
-
-  <!-- Font Awesome (para íconos de redes) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--Icono de la pagina-->
-  <link rel="icon" type="image/x-icon" href="/img/gatoico.png">
+  <!-- Estilos personalizados -->
+   <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <link rel="icon" type="image/x-icon" href="../img/gatoico.png">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
-
-      <!-- Encabezado -->
+  <!-- Header consistente con las otras páginas -->
   <header class="bg-black text-white py-3">
     <div class="container d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center gap-3">
-        <img src="/img/gatoico.PNG" alt="Universal" height="30">
+        <img src="../img/gatoico.PNG" alt="Logo Gato con Botas" height="30">
         <nav>
           <a href="../index.html" class="nav-link d-inline text-white">Inicio</a>
-          <a href="/html/trailers.html" class="nav-link d-inline text-white">Tráilers</a>
-          <a href="/html/cronologia.html" class="nav-link d-inline text-white">Cronología</a>
-          <a href="/html/catalogo.html" class="nav-link d-inline text-white">Catálogo</a>
-          <a href="/html/fechaestreno.html" class="nav-link d-inline text-white">Fechas de Estreno</a>
+          <a href="cronologia.html" class="nav-link d-inline text-white">Cronología</a>
+          <a href="trailers.html" class="nav-link d-inline text-white">Tráilers</a>
+          <a href="catalogo.html" class="nav-link d-inline text-white active">Catálogo</a>
+          <a href="fechaestreno.html" class="nav-link d-inline text-white">Fechas de Estreno</a>
         </nav>
       </div>
       <div class="social-icons d-flex gap-3">
@@ -43,9 +38,263 @@
     </div>
   </header>
 
-    <h2 class="titulo">Catálogo</h2>
+  <!-- Hero Section -->
+  <section class="hero-catalog  bg-gradient py-5 mb-5">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Catálogo Oficial</h1>
+      <p class="lead">Descubre los productos exclusivos de El Gato con Botas</p>
+    </div>
+  </section>
 
-<body>
-    
+  <!-- Catálogo de Productos -->
+  <main class="container mb-5">
+    <div class="row g-4">
+      <!-- Filtros -->
+      <div class="col-md-3">
+        <div class="card shadow-sm">
+          <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Filtrar Productos</h5>
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Categorías</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="juguetes" checked>
+              <label class="form-check-label" for="juguetes">Juguetes</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="ropa">
+              <label class="form-check-label" for="ropa">Ropa</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="coleccionables">
+              <label class="form-check-label" for="coleccionables">Coleccionables</label>
+            </div>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted">Precio</h6>
+            <input type="range" class="form-range" min="0" max="100" id="priceRange">
+            <div class="d-flex justify-content-between">
+              <small>0€</small>
+              <small>100€</small>
+            </div>
+            <button class="btn btn-warning mt-3 w-100">Aplicar Filtros</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div class="col-md-9">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Producto 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-2">Nuevo</span>
+              <img src="../img/Figura de Acción - Gato con Botas.jpg" class="card-img-top" alt="Figura de acción">
+              <div class="card-body">
+                <h5 class="card-title">Figura de Acción - Gato con Botas</h5>
+                <p class="card-text">Figura articulada de 20cm con accesorios: espada, sombrero y botas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">4.0 (56)</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-dark fs-4">24,99€</strong>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="fas fa-shopping-cart me-1"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="../img/Peluche Gato con Botas.jpg" class="card-img-top" alt="Peluche">
+              <div class="card-body">
+                <h5 class="card-title">Peluche Gato con Botas</h5>
+                <p class="card-text">Peluche suave de 30cm, perfecto para fans de todas las edades.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <span class="text-muted">4.5 (128)</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-dark fs-4">19,99€</strong>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="fas fa-shopping-cart me-1"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <span class="badge bg-success position-absolute top-0 end-0 m-2">Oferta</span>
+              <img src="../img/Sombrero del Gato con Botas.jpg" class="card-img-top" alt="Sombrero">
+              <div class="card-body">
+                <h5 class="card-title">Sombrero del Gato con Botas</h5>
+                <p class="card-text">Réplica exacta del sombrero, talla ajustable para adultos y niños.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="text-muted">5.0 (89)</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <strong class="text-dark fs-4">15,99€</strong>
+                    <small class="text-danger text-decoration-line-through ms-2">22,99€</small>
+                  </div>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="fas fa-shopping-cart me-1"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="../img/Camiseta Mirada de Gato.jpg" class="card-img-top" alt="Camiseta">
+              <div class="card-body">
+                <h5 class="card-title">Camiseta "Mirada de Gato"</h5>
+                <p class="card-text">Camiseta 100% algodón con la icónica mirada del Gato con Botas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">4.0 (42)</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-dark fs-4">14,99€</strong>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="fas fa-shopping-cart me-1"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="../img/Espada de Acero Inoxidable.png" class="card-img-top" alt="Espada">
+              <div class="card-body">
+                <h5 class="card-title">Espada de Acero Inoxidable</h5>
+                <p class="card-text">Réplica de la espada del Gato con Botas, 50cm de longitud.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">3.5 (37)</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-dark fs-4">29,99€</strong>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="fas fa-shopping-cart me-1"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <span class="badge bg-info position-absolute top-0 end-0 m-2">Ed. Limitada</span>
+              <img src="../img/Disfraz infantil.jpeg" class="card-img-top" alt="Pack coleccionista">
+              <div class="card-body">
+                <h5 class="card-title">Disfraz Infantil</h5>
+                <p class="card-text">Incluye sombrero, espada y certificado de autenticidad.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="text-muted">5.0 (24)</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-dark fs-4">59,99€</strong>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="fas fa-shopping-cart me-1"></i> Añadir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginación -->
+        <nav aria-label="Page navigation" class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Siguiente</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 - Sitio no oficial de El Gato con Botas | Hecho por Roberto Muñoz Jiménez y Sergio Gomez Galvan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script personalizado para el catálogo -->
+  <script src="../js/catalogo.js"></script>
 </body>
 </html>
