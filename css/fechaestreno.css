@@ -50,12 +50,12 @@ object-fit: cover;
         
 .pelicula h2 {
     margin: 0 0 10px;
-    color: #e50914;
+    color: #464142;
 }
         
 .fecha {
     font-weight: bold;
-    color: #e50914;
+    color: #645758;
     font-size: 1.1em;
 }
         
