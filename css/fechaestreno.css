@@ -1,24 +1,30 @@
+/*Para el cuerpo de la página le hemos puesto un espaciado interno alrededor del contenido,un fondo oscuro y un color de texto principal */
 body {
     padding: 15px;
     background-color: #121212;
     color: #9f8e8e;
 }
 
+/*Para los enlaces de navegacion, un espaciado horizontal entre elaces, le quitamos el subbrayado por defecto y le ponemos grosor al texto*/
 .nav-link {
     margin: 0 10px;
     font-weight: 500;
     text-decoration: none;
 }
-  
+
+/*Se subraya el texto al pasar el cursor sobre un enlace de la navegacion de la página*/
 .nav-link:hover {
     text-decoration: underline;
 }
 
+/*Para el titulo principal de la pagina lo hemos centrado y le hemos puesto un color*/
 h1 {
     text-align: center;
     color: #968488;
 }
 
+/*Para el contenedor princiapal de todas las peliculas hemos usado flexbox para organizar los elementos, que los elementos bajen a la siguiente linea si no caben,
+hemos centrado los elementos horizontalmente y hemos puesto un espacio entre las tarjetas de las peliculas*/
 .peliculas-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +32,8 @@ h1 {
     gap: 20px;
 }
 
+/*Para las tarjetas de cada pelicula le hemos pusto un fondo blanco, los bordes redondeados, un ancho fijo, 
+ocultado el contenido que se salga del borde y se ha suavizado la animacion al hacer el hover */
 .pelicula {
     background: white;
     border-radius: 10px;
@@ -34,31 +42,37 @@ h1 {
     transition: transform 0.3s;
 }
 
+/*Efecto al pasar el mause por la tarjeta se levanta hacia arriba*/
 .pelicula:hover {
     transform: translateY(-5px);
 }
 
+/*Para la imagen de la pelicula le hemos puesto que ocupe todo el ancho del contenedor, una altura fija,y nos hemos asegurado de que la imagen cubra el espacio sin deformarse*/
 .pelicula img {
 width: 100%;
 height: 500px;
 object-fit: cover;
 }
-        
+
+/*Para la informacion de la pelicula dentro de la tarjeta le hemos puesto un espacio interno alrededor del texto*/
 .pelicula-info {
     padding: 15px;
 }
-        
+
+/*Para el titulo de la pelicula dentro de la tarjeta hemos puesto que no tenga margen superior pero si inferior, y un color oscuro para que resalte*/
 .pelicula h2 {
-    margin: 0 0 10px;
+  /*Se subraya el texto al pasar el cursor sobre un enlace de la navegacion de la página*/
     color: #464142;
 }
-        
+
+/*Para la fecha de estreno la hemos puesto en negrita, un color oscuro y un tamaño de fuente*/
 .fecha {
     font-weight: bold;
     color: #645758;
-    font-size: 1.1em;
+    font-size: 17.6px;
 }
-        
+
+/*Para el apartado de genero le hemos puesto un color gris y un estilo cursiva*/
 .genero {
     color: #666;
     font-style: italic;
