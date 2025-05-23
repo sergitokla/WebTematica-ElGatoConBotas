@@ -14,6 +14,7 @@ Este sitio web ofrece una experiencia inmersiva centrada en el personaje del Gat
 - **Bootstrap 5.3**: Sistema de diseño responsive y uso de al menos 10 componentes prediseñados.
 
 ## 📁 Estructura del Proyecto
+```plaintext
 ├── css/
 │   ├── bootstrap.css
 │   └── style.css
@@ -50,3 +51,4 @@ Este sitio web ofrece una experiencia inmersiva centrada en el personaje del Gat
 ├── fechaestreno.html
 ├── cronologia.html
 ├── catalogo.html
+```
