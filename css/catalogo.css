@@ -1,0 +1,67 @@
+.hero-catalog {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: #302d2d;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.card-footer {
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .card-footer {
+  background-color: #121212;
+}
+
+.rating {
+  font-size: 0.9rem;
+}
+
+.btn-warning {
+  background-color: #f0b507;
+  border-color: #756125;
+  color: #262c31;
+  font-weight: 500;
+}
+
+.btn-warning:hover {
+  background-color: #fcd709;
+  border-color: #000000;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+  
+  .hero-catalog {
+    
+    padding: 3rem 1rem;
+  }
+}

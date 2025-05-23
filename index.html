@@ -6,10 +6,10 @@
   <title>El Gato con Botas</title>
 
   <!-- Enlace a la hoja de estilos de bootstrap -->
-  <link rel="stylesheet" href="Css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
 
   <!--Enlace al archivo css-->
-  <link rel="stylesheet" href="Css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Font Awesome (para íconos de redes sociales) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,23 +19,18 @@
 </head>
 
 <body>
-
-      <!-- Encabezado -->
-  <header class="bg-black text-white py-3"><!-- Fondo negro, texto blanco, padding vertical --> 
-    <div class="container d-flex justify-content-between align-items-center"><!-- Flexbox para distribuir contenido -->
-      
-        <!-- Lado izquierdo: Logo y los apartados que tiene la pagina -->
+ <header class="bg-black text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center gap-3">
-        <img src="img/gatoico.PNG" alt="Universal" height="30"><!-- Logo -->
-        <nav><!-- Barra de navegación -->
+        <img src="/img/gatoico.PNG" alt="Universal" height="30">
+        <nav>
+          <a href="../index.html" class="nav-link d-inline text-white">Inicio</a>
           <a href="/html/trailers.html" class="nav-link d-inline text-white">Tráilers</a>
           <a href="/html/cronologia.html" class="nav-link d-inline text-white">Cronología</a>
           <a href="/html/catalogo.html" class="nav-link d-inline text-white">Catálogo</a>
           <a href="/html/fechaestreno.html" class="nav-link d-inline text-white">Fechas de Estreno</a>
         </nav>
       </div>
-
-            <!-- Lado derecho: íconos de redes sociales -->
       <div class="social-icons d-flex gap-3">
         <a href="https://www.instagram.com/el.gato.con_botas/" class="text-white"><i class="fab fa-instagram"></i></a>
         <a href="https://x.com/SitoCinema/status/1718728159154040889" class="text-white"><i class="fab fa-x-twitter"></i></a>
@@ -45,94 +40,110 @@
       </div>
     </div>
   </header>
-      <!-- Título principal -->
-    <h2 class="titulo">El Gato con Botas</h2>
 
-  <!-- Seccion carrusel de imagenes -->
-  <section class="my-5"><!-- Margen vertical -->
-    <div class="container">
-            <!-- Carrusel de Bootstrap -->
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/foto1-carrusel.jpeg" class="d-block w-100" alt="Foto 1"><!-- Imagen 1 -->
-          </div>
-          <div class="carousel-item">
-            <img src="img/foto2-carrusel.jpg" class="d-block w-100" alt="Foto 2"><!-- Imagen 2 -->
-          </div>
-          <div class="carousel-item">
-            <img src="img/foto3-carrusel.jpg" class="d-block w-100" alt="Foto 3"><!-- Imagen 3 -->
+  <!-- CARRUSEL -->
+  <section class="container mt-4">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="/img/foto1-carrusel.jpeg" class="d-block w-100" alt="Gato 1">
         </div>
+        <div class="carousel-item">
+          <img src="/img/foto2-carrusel.jpg" class="d-block w-100" alt="Gato 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/foto3-carrusel.jpg" class="d-block w-100" alt="Gato 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
 
-                <!-- Botones de navegación del carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+  <!-- SINOPSIS -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col">
+        <h3 class="titulo">Sinopsis</h3>
+        <p>El Gato con Botas es un personaje clásico, conocido por su astucia, elegancia y valentía. Su historia comienza como un gato común que, gracias a su inteligencia, logra engañar a un rey y convertirse en noble. En la saga de películas, se le representa como un espadachín experto, héroe romántico y amigo leal, destacando por su humor y carisma.</p>
       </div>
     </div>
   </section>
 
-    <!-- Apartado sinopsis -->
+  <!-- APARICIONES -->
   <section class="container my-5">
-    <h3>Sinopsis</h3>
-    <p>Personaje clásico, conocido por su astucia, elegancia y valentía. 
-      Es un felino parlante que viste un par de botas, un sombrero con pluma y una espada, dándole un aire de aventurero audaz y gallardo.
-    </p>
-  </section>
-
-    <!-- Apartado de apariciones del gato -->
-  <section >
-    <div class="container">
-      <h3>Apariciones del gato con botas</h3>
-      <ul>
-        <li>El gato con botas</li>
-        <li>El gato con bota: El ultimo deseo</li>
-        <li>Shrek 2</li>
-        <li>Shrek 3</li>
-      </ul>
+    <div class="row">
+      <div class="col">
+        <h3 class="titulo">Apariciones del gato con botas</h3>
+        <ul>
+          <li>El gato con botas</li>
+          <li>El gato con botas: El último deseo</li>
+          <li>Shrek 2</li>
+          <li>Shrek 3</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-    <!-- Apartado de galería de fotos -->
+  <!-- GALERÍA -->
   <section class="container my-5">
     <h3 class="titulo">Galería</h3>
     <div class="row">
-           <!-- Cada imagen ocupa 1/3 del ancho en pantallas medianas -->
-      <div class="col-md-4 mb-3">
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
         <img src="img/foto1-galeria.png" class="img-fluid rounded" alt="Escena 1">
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
         <img src="img/foto2-galeria.png" class="img-fluid rounded" alt="Escena 2">
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
         <img src="img/foto3-galeria.png" class="img-fluid rounded" alt="Escena 3">
       </div>
     </div>
   </section>
 
-  <!-- Apartado de las reseñas del publico-->
-  <section >
-    <div class="container">
-      <h3>Reseñas del Público</h3>
-      <blockquote class="blockquote">
-        <p>"Una película divertida, visualmente hermosa y llena de acción. ¡El Gato está mejor que nunca!"</p>
-        <footer class="blockquote-footer">Revista CineFan</footer>
-      </blockquote>
-      <blockquote class="blockquote">
-        <p>"Gran historia sobre segundas oportunidades. Muy recomendable para toda la familia."</p>
-        <footer class="blockquote-footer">Blog de Pelis</footer>
-      </blockquote>
+  <!-- RESEÑAS -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col">
+        <h3 class="titulo">Nuestro Propósito</h3>
+        <p>
+Este espacio nace para celebrar a uno de los personajes más carismáticos del universo DreamWorks: el Gato con Botas. Más que un simple felino con calzado, representa la combinación perfecta de valentía, humor y estilo que ha conquistado a generaciones.
+
+Qué Ofrecemos
+
+Biografía Completa: Desde sus orígenes en San Ricardo hasta sus apariciones junto a Shrek
+
+Filmografía Detallada: Análisis de El Gato con Botas (2011) y El Último Deseo (2022)
+
+Guía de Personajes: Kitty, Perrito, Humpty Dumpty y otros aliados (o rivales)
+
+Curiosidades: Detalles técnicos, referencias culturales y secretos de producción
+
+Para Verdaderos Fans
+Este sitio está creado por admiradores, para admiradores. Incluimos:
+✓ Escenas emblemáticas analizadas
+✓ Evolución del diseño del personaje
+✓ Impacto cultural del felino más famoso</p>
+        <p>“El Gato con Botas demuestra que incluso los héroes pequeños pueden tener grandes corazones.”</p>
+      </div>
     </div>
   </section>
 
-  <!-- Apartado del footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2025 - Sitio no oficial de El Gato con Botas | Hecho por Roberto Muñoz Jiménez y Sergio Gomez Galvan</p>
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 El Gato con Botas. Todos los derechos reservados.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="footer-link">Política de Privacidad</a>
+        <a href="#" class="footer-link">Términos de uso</a>
+        <a href="#" class="footer-link">Contacto</a>
+      </div>
+    </div>
   </footer>
-
   <!-- Bootstrap JS (para funcionalidad del carrusel y componentes interactivos)-->
   <script src="JS/bootstrap.bundle.js"></script>
 </body>
