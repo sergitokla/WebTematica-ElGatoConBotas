@@ -1,25 +1,8 @@
 /*Para el cuerpo de la pagina un fondo oscuro, un color de tono gris de texto principal y una fuente para el texto*/
 body {
-
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    text-align: center;
-}
-
-
-.tiulo{
-    text-align: center;
-}
-.txt{
-    text-align: center;
-
     background-color: #121212;
     color: rgb(156, 136, 136);
     font-family: 'Segoe UI', sans-serif;
-
 }
 
   /*Para los enlaces de navegacion, un espaciado horizontal entre elaces, le quitamos el subbrayado por defecto y le ponemos grosor al texto*/
@@ -28,7 +11,7 @@ body {
     font-weight: 500;
     text-decoration: none;
 }
-  
+
   /*Se subraya el texto al pasar el cursor sobre un enlace de la navegacion de la página*/
 .nav-link:hover {
     text-decoration: underline;
@@ -54,12 +37,7 @@ p{
 
 /*Para el titulo de la pelicula en las tarjetas le hemos puesto un color plateado*/
 .movie h2 {
-
-    margin-top: 0;
-    color:  rgb(182, 144, 21);
-    text-align: center;
     color: silver;
-
 }
 
 /*Para el contenedor de los trailer(videos) henmos puesto una posicion relativa para que esten dentro de las cajas, una altura proporcional para mantener las proporciones del video */
