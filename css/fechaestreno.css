@@ -1,8 +1,15 @@
+*{
+    margin: 0;
+}
+
+
 /*Para el cuerpo de la página le hemos puesto un espaciado interno alrededor del contenido,un fondo oscuro y un color de texto principal */
 body {
     padding: 15px;
     background-color: #121212;
     color: #9f8e8e;
+    margin: 0;
+    padding: 0;
 }
 
 /*Para los enlaces de navegacion, un espaciado horizontal entre elaces, le quitamos el subbrayado por defecto y le ponemos grosor al texto*/
