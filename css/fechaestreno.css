@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-}
-
-
 /*Para el cuerpo de la página le hemos puesto un espaciado interno alrededor del contenido,un fondo oscuro ,un color de texto principal y hemos eliminado los margenes */
 body {
     padding: 15px;
