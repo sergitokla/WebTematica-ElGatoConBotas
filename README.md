@@ -17,6 +17,11 @@ Este sitio web ofrece una experiencia inmersiva centrada en el personaje del Gat
 
 │
 ├── index.html # Página principal
+├──trailer.html # Seccion de trailers de todas las peliculas
+├──cronologia.html # Seccion de orden y años para ver las peliculas en las que esta el gato con botas(Con gran descripcion de cada pelicula)
+├──catalogo.html # Seccion de una tienda en la que se venden productos del gato con botas
+├──fechaestreno.html # Seccion en la que encontraremos el estreno de todas las peliculas del gato con botas, el genero de la pelicula y una breve descripcion de ella.
+│
 │
 ├──css/
 │ └── styles.css # Estilos personalizados
@@ -46,13 +51,6 @@ Este sitio web ofrece una experiencia inmersiva centrada en el personaje del Gat
 │ └── Camiseta Mirada de Gato.jpg # Imagen de catalogo
 │ └── Espada de Acero Inoxidable.png # Imagen de catalogo
 │ └── Disfraz infantil.jpeg # Imagen de catalogo
-│
-│
-├── html/
-│ └── trailer.html # Seccion de trailers de todas las peliculas
-│ └── cronologia.html # Seccion de orden y años para ver las peliculas en las que esta el gato con botas(Con gran descripcion de cada pelicula) 
-│ └── catalogo.html # Seccion de una tienda en la que se venden productos del gato con botas
-│ └── fechaestreno.html # Seccion en la que encontraremos el estreno de todas las peliculas del gato con botas, el genero de la pelicula y una breve descripcion de ella.
 │
 │
 ├── js/
